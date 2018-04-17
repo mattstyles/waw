@@ -13,5 +13,17 @@ export const updateMessage = compress({
         ? 'world'
         : 'hello'
     }
+  }),
+  'ROUTE_CHANGE': safe((state, event) => {
+    console.log('::', state, event)
+    return {
+      ...state,
+      navigation: {
+        index: 0,
+        stack: [
+          {pathname: event.payload}
+        ]
+      }
+    }
   })
 })

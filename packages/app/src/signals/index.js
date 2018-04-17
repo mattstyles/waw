@@ -3,7 +3,14 @@ import {Signal} from 'raid'
 import {adaptor} from 'raid-addons'
 
 const initial = {
-  message: 'hello'
+  message: 'hello',
+
+  navigation: {
+    index: 0,
+    stack: [
+      {pathname: '/'}
+    ]
+  }
 }
 
 export const signal = new Signal(initial)
