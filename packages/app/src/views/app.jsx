@@ -4,25 +4,22 @@ import {ThemeProvider} from 'styled-components'
 import {theme} from '@waw/components'
 
 // import {Navigation, push} from 'core/navigator'
-import {RouteMatcher} from 'raid-navigator'
-
-import {dispatch} from 'signals'
-
-const push = dispatch('ROUTE_CHANGE')
+import {SimpleComponentRouter} from 'simple-component-router'
+import {push} from 'core/navigation'
 
 const App = ({state}) => (
   <ThemeProvider theme={theme}>
     <Fragment>
-      <button onClick={e => push('/settings')}>Settings</button>
-      <button onClick={e => push('/')}>Home</button>
-      <RouteMatcher navigation={state.navigation}>
-        <div route='/'>
+      <button onClick={e => push('settings')}>Settings</button>
+      <button onClick={e => push('home')}>Home</button>
+      <SimpleComponentRouter match={state.navigation}>
+        <div match='home'>
           <h1>Home</h1>
         </div>
-        <div route='/settings'>
-          <h1>Home</h1>
+        <div match='settings'>
+          <h1>Settings</h1>
         </div>
-      </RouteMatcher>
+      </SimpleComponentRouter>
     </Fragment>
   </ThemeProvider>
 )

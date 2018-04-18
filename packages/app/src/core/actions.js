@@ -1,6 +1,6 @@
 
 const actions = {
-  anAction: 'app:anAction'
+  changeRoute: 'app:changeRoute'
 }
 
 export default actions

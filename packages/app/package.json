@@ -84,9 +84,10 @@
     "raid-fl": "^2.10.0",
     "raid-navigator": "^2.10.0",
     "raid-streams": "^2.10.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.0",
     "reselect": "^2.5.4",
+    "simple-component-router": "0.0.2",
     "styled-components": "^2.4.0"
   }
 }
