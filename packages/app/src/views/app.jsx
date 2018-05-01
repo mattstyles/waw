@@ -3,7 +3,6 @@ import React, {Fragment} from 'react'
 import {ThemeProvider} from 'styled-components'
 import {theme} from '@waw/components'
 
-// import {Navigation, push} from 'core/navigator'
 import {SimpleComponentRouter} from 'simple-component-router'
 import {push} from 'core/navigation'
 
