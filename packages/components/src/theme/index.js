@@ -3,6 +3,12 @@ import oc from 'open-color'
 import Shevy from 'shevyjs'
 import {pick} from 'lodash'
 
+import * as Mixins from './mixins'
+import * as Utils from './utils'
+
+export { Mixins as mixins }
+export { Utils as utils }
+
 const baseLineHeight = 1.6
 const baseFontSize = 1.4
 
@@ -109,5 +115,3 @@ export const theme = {
     sunset: `linear-gradient(30deg, ${oc.orange[3]}, ${oc.red[7]} 75%)`
   }
 }
-
-export * from './utils'

@@ -10,10 +10,10 @@ addDecorator(story => (
   <Base>{story()}</Base>
 ))
 
-const stories = require.context('../stories', true, /\.stories\.js$/)
+// const stories = require.context('../stories', true, /\.stories\.js$/)
 const components = require.context('../src', true, /\.stories\.js$/)
 function loadStories () {
-  stories.keys().forEach(filename => stories(filename))
+  // stories.keys().forEach(filename => stories(filename))
   components.keys().forEach(filename => components(filename))
 }
 
