@@ -2,22 +2,21 @@
 import {storiesOf} from '@storybook/react'
 
 import {Sprite} from './sprite'
+import {View} from '../view'
 
 import sheet from '../assets/charb.png'
 
 storiesOf('Sprite', module)
   .add('basic', () => (
-    <div>
+    <View>
       <Sprite
         url={sheet}
         scale={2}
       />
-    </div>
+    </View>
   ))
   .add('absolute', () => (
-    <div style={{
-      position: 'relative'
-    }}>
+    <View>
       <Sprite
         url={sheet}
         scale={8}
@@ -27,5 +26,5 @@ storiesOf('Sprite', module)
         x={100}
         y={200}
       />
-    </div>
+    </View>
   ))
