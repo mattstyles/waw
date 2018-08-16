@@ -4,6 +4,8 @@ import styled from 'styled-components'
 
 import {getTheme} from '../theme/utils'
 
+const getBasePadding = getTheme('basePadding')
+
 export const View = styled.div`
   display: ${props => props.flex && 'flex'};
   flex-direction: ${props => props.flex && 'column'};
@@ -11,7 +13,7 @@ export const View = styled.div`
   position: relative;
   overflow-y: scroll;
   overflow-x: hidden;
-  padding: ${props => props.isPadded && `${getTheme('basePadding')}rem`}
+  padding: ${props => props.isPadded && `${getBasePadding(props)}rem`};
 `
 View.propTypes = {
   isPadded: PropTypes.bool,
