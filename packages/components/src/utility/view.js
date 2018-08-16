@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import {getTheme} from './theme/utils'
+import {getTheme} from '../theme/utils'
 
 export const View = styled.div`
   display: ${props => props.flex && 'flex'};

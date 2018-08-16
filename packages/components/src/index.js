@@ -3,8 +3,11 @@ import {injectGlobal} from 'styled-components'
 import oc from 'open-color'
 import {theme} from './theme/index'
 
-export * from './icons'
 export * from './theme'
+export * from './icons'
+export * from './sprite/sprite'
+export * from './utility'
+export * from './type/type'
 
 export const setGlobalStyling = () => {
   injectGlobal`

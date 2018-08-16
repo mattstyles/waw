@@ -2,7 +2,7 @@
 import {storiesOf} from '@storybook/react'
 
 import {Sprite} from './sprite'
-import {View} from '../view'
+import {View} from '../'
 
 import sheet from '../assets/charb.png'
 

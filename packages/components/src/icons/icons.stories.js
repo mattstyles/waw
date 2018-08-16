@@ -2,10 +2,11 @@
 import {storiesOf} from '@storybook/react'
 
 import {Icon} from './'
+import {View} from '../'
 
-storiesOf('icons', module)
-  .add('icons', () => (
-    <div>
+storiesOf('Icons', module)
+  .add('home', () => (
+    <View>
       <Icon icon='HOME' />
-    </div>
+    </View>
   ))
